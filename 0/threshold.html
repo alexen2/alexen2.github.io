@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+      <link rel="manifest" href="images/site.webmanifest">
+      <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="theme-color" content="#ffffff">
+      <title>RUBL - Stable coin. Switzerland based company.</title>
+      <link href="css/jquery.modal.min.css" rel="stylesheet">
+      <link href="css/select2.min.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet"><!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    </head>
+  <body>
+        <div class="top-in top-in--threshold"><img class="top-in__img" src="images/top-in--threshold.png" alt="">
+              <header class="header header--black">
+                <div class="container">
+                  <div class="row align-items-center justify-content-between">
+                    <div class="col"><a class="logo" href="/"><img src="images/logo--black.svg" alt="RUBL WALLET"></a>
+                    </div>
+                    <div class="col col-lg-9 header__menu">
+                      <div class="menu">
+                        <ul class="menu__list">
+                          <li class="menu__item"><a href="/#block-tss">Features</a></li>
+                          <li class="menu__item"><a href="/#block-2nd">Security</a></li>
+                          <li class="menu__item"><a href="/#block-transfer">Money transfer</a></li>
+                          <li class="menu__item"><a href="/#block-exchage">Exchange</a></li>
+                          <li class="menu__item"><a href="">Support</a></li>
+                        </ul>
+                      </div>
+                          <button class="btn btn--sm btn--outline btn--bold" type="button"><span class="btn__text">Get the app</span>
+                          </button>
+                    </div>
+                    <div class="col header__hamburger">
+                                  <button class="hamburger hamburger--spin" type="button" id="menu__close"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+                    </div>
+                  </div>
+                </div>
+              </header>
+          <div class="top-in__body">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <p class="lead">RUBL WALLET FEATURES</p>
+                  <h1 class="h1">Threshold Signature<br> Scheme (TSS)</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <div class="wallets">
+      <div class="container">
+        <div class="row"> 
+          <div class="col-12 col-md-6">
+            <h2 class="h3">Threshold wallets</h2>
+            <p class="text text--mb40">TSS-based wallets, also have a&nbsp;nice security feature, which is&nbsp;enabling of&nbsp;private key rotation without changing the corresponding public key and blockchain address.</p>
+            <p class="text">Private key rotation, also known as&nbsp;proactive secret sharing, is&nbsp;yet another MPC protocol that takes the secret shares as&nbsp;input, and outputs a&nbsp;new set of&nbsp;secret shares. The old secret shares can be&nbsp;deleted and the new ones can be&nbsp;used in&nbsp;the same way.</p>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="wallets__img"><img src="images/threshold--img.jpg" alt="images"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="features-tss">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="features-tss__header">
+                  <div class="block-header">
+                    <h2 class="h3">TSS features</h2>
+                    <p class="text">Features that make RUBL Wallet so&nbsp;great</p>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-4">
+                <div class="feature2">
+                  <div class="feature2__icon"><img src="images/feature2__icon1.svg" alt="icon"></div>
+                  <div class="feature2__text">The ability to&nbsp;restore keys when losing 1&nbsp;of&nbsp;3&nbsp;components</div>
+                </div>
+          </div>
+          <div class="col-12 col-lg-4">
+                <div class="feature2">
+                  <div class="feature2__icon"><img src="images/feature2__icon2.svg" alt="icon"></div>
+                  <div class="feature2__text">User personally controls his funds and doesn&rsquo;t transfer them to&nbsp;anyone</div>
+                </div>
+          </div>
+          <div class="col-12 col-lg-4">
+                <div class="feature2">
+                  <div class="feature2__icon"><img src="images/feature2__icon3.svg" alt="icon"></div>
+                  <div class="feature2__text">With the loss of&nbsp;1&nbsp;component of&nbsp;the key, funds loss isn&rsquo;t possible (wallet compromise)</div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="technology">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="technology__title"></div>
+                <div class="block-header">
+                  <h2 class="h3">Technology comparison</h2>
+                  <p class="text">Differences between systems</p>
+                </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <table class="table-technology" cellspacing="0" cellpadding="0" border="0">
+              <thead class="table-technology__head">
+                <tr>
+                  <th></th>
+                  <th>TSS</th>
+                  <th>SSSS</th>
+                  <th>Multi-Signature</th>
+                </tr>
+              </thead>
+              <tbody class="table-technology__body">
+                <tr class="table-technology__top">
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td valing="top">Key Generation</td>
+                  <td class="table-technology__green" valing="top">Distributed</td>
+                  <td class="table-technology__alert" valing="top">Single Point (Dealer)</td>
+                  <td class="table-technology__normal" valing="top">Depends</td>
+                </tr>
+                <tr>
+                  <td valing="top">Key Storage</td>
+                  <td class="table-technology__green" valing="top">Distributed</td>
+                  <td class="table-technology__green" valing="top">Distributed</td>
+                  <td class="table-technology__green" valing="top">Distributed</td>
+                </tr>
+                <tr>
+                  <td valing="top">Signing</td>
+                  <td class="table-technology__green" valing="top">Distributed</td>
+                  <td class="table-technology__alert" valing="top">Single Point</td>
+                  <td class="table-technology__green" valing="top">Distributed</td>
+                </tr>
+                <tr>
+                  <td valing="top">Transaction Costs</td>
+                  <td class="table-technology__green" valing="top">Low</td>
+                  <td class="table-technology__green" valing="top">Low</td>
+                  <td class="table-technology__alert" valing="top">High</td>
+                </tr>
+                <tr>
+                  <td valing="top">Transaction Size</td>
+                  <td class="table-technology__green" valing="top">Small</td>
+                  <td class="table-technology__green" valing="top">Small</td>
+                  <td class="table-technology__alert" valing="top">Big (# of Keys)</td>
+                </tr>
+                <tr>
+                  <td valing="top">Privacy</td>
+                  <td class="table-technology__green" valing="top">Yes</td>
+                  <td class="table-technology__green" valing="top">Yes</td>
+                  <td class="table-technology__alert" valing="top"># of Keys & Public Addresses</td>
+                </tr>
+                <tr>
+                  <td valing="top">Agnostic to Treshold <br>support</td>
+                  <td class="table-technology__green" valign="top">Yes</td>
+                  <td class="table-technology__green" valign="top">Yes</td>
+                  <td class="table-technology__alert" valign="top">No</td>
+                </tr>
+                <tr>
+                  <td valing="top">Participant Interaction</td>
+                  <td class="table-technology__alert" valing="top">Interactive (offchain)</td>
+                  <td class="table-technology__alert" valing="top">Interactive (offchain)</td>
+                  <td class="table-technology__green" valing="top">Non-interactive</td>
+                </tr>
+                <tr>
+                  <td valing="top">Private Key Rotation</td>
+                  <td class="table-technology__green" valing="top">Yes</td>
+                  <td class="table-technology__green" valing="top">Yes</td>
+                  <td class="table-technology__alert" valing="top">No</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="key-manager">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-7">
+            <div class="key-manager__left">
+              <div class="key-manager__header">
+                <h2 class="h3">Key manager for desktop</h2>
+              </div>
+              <p class="text text--mb40">We&nbsp;build a&nbsp;conceptually new way of&nbsp;protecting your wallet and funds in&nbsp;it. We&nbsp;offer you to&nbsp;storage your private key components not only on&nbsp;your phone.</p>
+              <p class="text text--mb20 text--border-b">Welcome desktop key manager. In&nbsp;case of&nbsp;loosing your key component it&nbsp;will help you to&nbsp;restore your wallet app, funds and lost component. Safety never was on&nbsp;such great level.</p>
+              <div class="download-key-manager">
+                <div class="download-key-manager__img"><img src="images/download-key-manager__img.png" alt="img"></div>
+                <div class="download-key-manager__text">
+                  <h3>Download key manager for desktop</h3>
+                  <p>Desktop app for macOs and Windows</p>
+                </div>
+                <div class="download-key-manager__btn">
+                      <button class="btn btn--yellow" type="button">
+                            <svg class="icon icon--download ">
+                              <use xlink:href="images/icons.svg#icon--download"></use>
+                            </svg><span class="btn__text">Download</span>
+                      </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5">
+            <div class="video" id="video">
+              <video id="video-player" width="100%" height="auto" preload="auto" autoplay="autoplay" loop="loop" muted="muted">
+                <source src="images/video.mp4" type="video/mp4">
+                <source src="images/video.webm" type="video/webm">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="features-super">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="features-super__header">
+                  <div class="block-header">
+                    <h2 class="h3">Key manager features</h2>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="row features-super__body">
+          <div class="col-12 col-md-6 col-lg-3">
+                <div class="feature">
+                  <div class="feature__top"><img src="images/feature__icon1.svg" alt="icon"></div>
+                  <h4 class="feature__title">Decentral storage</h4>
+                  <p class="feature__desc">Keep your key components on&nbsp;different devices for extra safety</p>
+                </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+                <div class="feature">
+                  <div class="feature__top"><img src="images/feature__icon2.svg" alt="icon"></div>
+                  <h4 class="feature__title">Recovery</h4>
+                  <p class="feature__desc">Recover your wallet with all funds via desktop app</p>
+                </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+                <div class="feature">
+                  <div class="feature__top"><img src="images/feature__icon3.svg" alt="icon"></div>
+                  <h4 class="feature__title">Lock lost device</h4>
+                  <p class="feature__desc">In&nbsp;case of&nbsp;loosing or&nbsp;being stolen&nbsp;&mdash; lock lost device to&nbsp;prevent access to&nbsp;your money</p>
+                </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+                <div class="feature">
+                  <div class="feature__top"><img src="images/feature__icon4.svg" alt="icon"></div>
+                  <h4 class="feature__title">Limits</h4>
+                  <p class="feature__desc">Set a&nbsp;limit for transactions. To&nbsp;send over limit key manager will ask your to&nbsp;submit transaction.</p>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="some-fact">
+      <div class="container-fluid">
+        <div class="row"> 
+          <div class="col-12">
+            <h2 class="h3">Some fact</h2>
+            <p class="text">TSS-based wallets, also have a&nbsp;nice security feature, which is&nbsp;enabling of&nbsp;private key rotation without changing the corresponding public key and blockchain address. Private key rotation, also known as&nbsp;proactive secret sharing, is&nbsp;yet another MPC protocol that takes the secret shares as&nbsp;input, and outputs a&nbsp;new set of&nbsp;secret shares. The old secret shares can be&nbsp;deleted and the new ones can be&nbsp;used in&nbsp;the same way.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wallet" id="wallet">
+      <div class="wallet__in">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="title title--sm">
+                <h2 class="h3">RUBL wallet</h2>
+              </div>
+              <p class="text">Official wallet application with security, transfers, topping up from cards, currency exchange, exchange for fiat</p>
+              <div class="wallet__app">
+                <p class="text text--sm">Soon app available at:</p>
+                <ul class="wallet__list">
+                  <li><a href="#" target="_blank"><img src="images/wallet__app-store.svg" alt="App Store"></a></li>
+                  <li><a href="#" target="_blank"><img src="images/wallet__google-play.svg" alt="Google Play"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="wallet__phones"><img class="wallet__phone1" src="images/wallet__phone1.png" alt="phone">
+                <div class="wallet__cards"><img class="wallet__card wallet__card--4" src="images/wallet_card_4.png" alt="card" id="wallet_card_4"><img class="wallet__card wallet__card--3" src="images/wallet_card_3.png" alt="card" id="wallet_card_3"><img class="wallet__card wallet__card--2" src="images/wallet_card_2.png" alt="card" id="wallet_card_2"><img class="wallet__card wallet__card--1" src="images/wallet_card_1.png" alt="card" id="wallet_card_1"></div><img class="wallet__phone2" src="images/wallet__phone2.png" alt="phone">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subscribe">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6">
+            <h2>Be&nbsp;the first to&nbsp;get the latest news</h2>
+          </div>
+          <div class="col-12 col-md-6">
+            <form action="/" name="subscribe" method="post">
+              <input class="input" type="text" name="email" placeholder="Your email here">
+                  <button class="btn" type="button"><span class="btn__text">Send</span>
+                  </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-5">
+            <div class="footer__block1"><a class="logo" href="/"><img src="images/logo.svg" alt="BRUB"></a></div>
+            <div class="footer__block2">
+              <ul class="apps-link">
+                <li class="apps-link__item"><a href="#" target="_blank"><img src="images/apps-link__app-store.png" alt="app store"></a></li>
+                <li class="apps-link__item"><a href="#" target="_blank"><img src="images/apps-link__google-play.png" alt="google play"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-7">
+            <div class="footer__block1">
+              <div class="menu">
+                <ul class="menu__list">
+                  <li class="menu__item"><a href="/#block-tss">Features</a></li>
+                  <li class="menu__item"><a href="/#block-2nd">Security</a></li>
+                  <li class="menu__item"><a href="/#block-transfer">Money transfer</a></li>
+                  <li class="menu__item"><a href="/#block-exchage">Exchange</a></li>
+                  <li class="menu__item"><a href="">Support</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__block2">
+              <ul class="social">
+                <li class="social__item"><a href="#"><img src="images/social__tw.svg" alt=""></a></li>
+                <li class="social__item"><a href="#"><img src="images/social__tl.svg" alt=""></a></li>
+                <li class="social__item"><a href="#"><img src="images/social__m.svg" alt=""></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-5 order-2 order-lg-1">
+              <p class="footer__copy">&copy; 2019 RUBL All rights reserved</p>
+            </div>
+            <div class="col-12 col-lg-7 order-1 order-lg-2">
+              <ul class="footer__menu">
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>$(document).ready(function() {$('html, body').animate({scrollTop: 0}, 8);});</script>
+    <script src="js/jquery.modal.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script src="js/CSSRulePlugin.min.js"></script>
+    <script src="js/EasePack.min.js"></script>
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="js/animation.gsap.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js")-->
+    <script>$(document).ready(function () {	svg4everybody({});});</script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
