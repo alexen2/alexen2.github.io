@@ -49,13 +49,14 @@ $(document).ready(function() {
 			.to(twoNdImg, 0.35, {
 				opacity: 1
 			})
-			.to(twoNdKey1, 0.2, {
+			.to(twoNdKey1, 0.4, {
+				delay: 0.3,
 				x: 25,
 				y: 360,
 				opacity: 1
 			})
-			.to(twoNdKey2, 0.2, {
-				delay: -0.2,
+			.to(twoNdKey2, 0.4, {
+				delay: -0.4,
 				x: 14,
 				y: 303,
 				opacity: 1
@@ -649,7 +650,6 @@ if (hamburgers.length > 0) {
     }, false);
   });
 }
-
 $(function(){
 	$('.menu a').on('click', function(e){
 		if($('.header__menu--open').length) {
@@ -689,6 +689,7 @@ function checkForScrolling() {
     $('html,body').stop().animate({ scrollTop: $(elem).offset().top - 200 }, 1500);
   }
 }
+
 window.addEventListener('load', function () {
 	const topBG = document.querySelector('.top__bg');
 	const header = document.querySelector('.header');
