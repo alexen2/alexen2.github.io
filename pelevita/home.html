@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" href="images/favicon.ico">
+      <title>Pelevita</title>
+      <link href="css/jquery.modal.min.css" rel="stylesheet">
+      <link href="css/selectize.css" rel="stylesheet">
+      <link href="css/slick.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet"><!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-3 col-lg-5 d-none d-md-block">
+              <div class="header__social"> 
+                <ul class="social-icon">
+                  <li class="social-icon__item"><a href="#"><span class="visually-hidden">Facebook</span>
+                          <svg class="icon icon--facebook ">
+                            <use xlink:href="images/icons.svg#icon--facebook"></use>
+                          </svg></a></li>
+                  <li class="social-icon__item"><a href="#"><span class="visually-hidden">Instagram</span>
+                          <svg class="icon icon--instagram ">
+                            <use xlink:href="images/icons.svg#icon--instagram"></use>
+                          </svg></a></li>
+                  <li class="social-icon__item"><a href="#"><span class="visually-hidden">Twitter</span>
+                          <svg class="icon icon--twitter ">
+                            <use xlink:href="images/icons.svg#icon--twitter"></use>
+                          </svg></a></li>
+                  <li class="social-icon__item"><a href="#"><span class="visually-hidden">Youtube</span>
+                          <svg class="icon icon--youtube ">
+                            <use xlink:href="images/icons.svg#icon--youtube"></use>
+                          </svg></a></li>
+                  <li class="social-icon__item"><a href="#"><span class="visually-hidden">Pinterest</span>
+                          <svg class="icon icon--pinterest ">
+                            <use xlink:href="images/icons.svg#icon--pinterest"></use>
+                          </svg></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-9 col-lg-7">
+              <div class="header__top-right">
+                <div class="header__mail">
+                                    <div class="icon-link icon-link__body--12"><a class="icon-link__body" href="mailto:support@pelevita.com">
+                                            <svg class="icon icon--envelope ">
+                                              <use xlink:href="images/icons.svg#icon--envelope"></use>
+                                            </svg><span>SUPPORT@PELEVITA.COM</span></a></div>
+                </div>
+                <div class="header__phone"><a class="icon-phone" href="tel:+972532741038">
+                        <svg class="icon icon--phone ">
+                          <use xlink:href="images/icons.svg#icon--phone"></use>
+                        </svg><span>+972532741038</span></a></div>
+                <div class="header__action"><a class="btn btn--sm modal-link" href="#modal_contact" role="button" target="_blank"><span class="btn__text">CALLBACK</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__navigation">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-5">
+              <div class="header__menu header__mobile">
+                                <nav class="menu">
+                                  <ul class="menu__list">
+                                    <li class="menu__item menu__item--active"><a class="menu__link" href="">CATALOG</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="">TRACKING</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="">CONTACTS</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="">ABOUT US</a></li>
+                                  </ul>
+                                </nav>
+              </div>
+            </div>
+            <div class="col-3 col-sm-2 col-lg-2">
+              <div class="header__logo"><a class="logo" href="/">
+                  <picture><img src="images/logo.png" alt="Pelevita"></picture></a></div>
+            </div>
+            <div class="col-9 col-sm-10 col-lg-5">
+              <div class="header__user-navigation">
+                <div class="user"><a class="user__login" href="#">
+                        <svg class="icon icon--user ">
+                          <use xlink:href="images/icons.svg#icon--user"></use>
+                        </svg><span>LOGIN</span></a>
+                  <div class="user__bag">
+                    <div class="user__bag-img"><span class="user__bag-number">1</span></div><span>129,3</span>
+                  </div>
+                  <div class="user__currency">
+                                        <div class="currency-select">
+                                          <select class="currency-select__select" name="currency">
+                                            <option selected value="USD">USD</option>
+                                            <option value="CAD">CAD</option>
+                                          </select>
+                                        </div>
+                  </div>
+                  <div class="user__like"> 
+                        <svg class="icon icon--heart_black ">
+                          <use xlink:href="images/icons.svg#icon--heart_black"></use>
+                        </svg><span class="user__like-number">1</span>
+                  </div>
+                </div>
+                <button class="header__btn" type="button"><span class="visually-hidden">Открыть меню</span><span class="header__btn-visual"></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__widget">
+          <div class="header__widget-overlay"></div>
+          <div class="basket-widget">
+            <h2 class="basket-widget__title">YOUR BAG (3 ITEMS)</h2>
+            <ul class="basket-widget__list">
+              <li class="basket-widget__item">
+                <div class="item-basket">
+                  <div class="item-basket__img"><a href="#"><img src="images/item-basket-img.jpg" alt="product"></a></div>
+                  <div class="item-basket__description"><a class="item-basket__title" href="">Cleansing Milk Pleasure for women</a><span> 9.9 OZ.</span><a class="item-basket__remove" href="">Remove</a></div>
+                  <div class="item-basket__action">
+                                        <div class="quantity quantity--sm">
+                                          <div class="quantity-button quantity-down"><span>-</span></div>
+                                          <input type="number" min="1" max="1000" step="1" value="1">
+                                          <div class="quantity-button quantity-up"><span>+</span></div>
+                                        </div>
+                  </div>
+                  <div class="item-basket__cost">
+                    <p>$49.90</p>
+                  </div>
+                </div>
+              </li>
+              <li class="basket-widget__item">
+                <div class="item-basket">
+                  <div class="item-basket__img"><a href="#"><img src="images/item-basket-img.jpg" alt="product"></a></div>
+                  <div class="item-basket__description"><a class="item-basket__title" href="">Cleansing Milk Pleasure for women</a><span> 9.9 OZ.</span><a class="item-basket__remove" href="">Remove</a></div>
+                  <div class="item-basket__action">
+                                        <div class="quantity quantity--sm">
+                                          <div class="quantity-button quantity-down"><span>-</span></div>
+                                          <input type="number" min="1" max="1000" step="1" value="1">
+                                          <div class="quantity-button quantity-up"><span>+</span></div>
+                                        </div>
+                  </div>
+                  <div class="item-basket__cost">
+                    <p>$49.90</p>
+                  </div>
+                </div>
+              </li>
+              <li class="basket-widget__item">
+                <div class="item-basket">
+                  <div class="item-basket__img"><a href="#"><img src="images/item-basket-img.jpg" alt="product"></a></div>
+                  <div class="item-basket__description"><a class="item-basket__title" href="">Cleansing Milk Pleasure for women</a><span> 9.9 OZ.</span><a class="item-basket__remove" href="">Remove</a></div>
+                  <div class="item-basket__action">
+                                        <div class="quantity quantity--sm">
+                                          <div class="quantity-button quantity-down"><span>-</span></div>
+                                          <input type="number" min="1" max="1000" step="1" value="1">
+                                          <div class="quantity-button quantity-up"><span>+</span></div>
+                                        </div>
+                  </div>
+                  <div class="item-basket__cost">
+                    <p>$49.90</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="basket-widget__total"><span class="basket-widget__text">SUBTOTAL: </span><span class="basket-widget__sum">$149,7</span></div>
+            <div class="basket-widget__action"> <a href="">CONTINUE SHOPPING</a><span>OR</span>
+                                <button class="btn btn--flat" type="button"><span class="btn__text">CHECKOUT</span>
+                                </button>
+            </div>
+          </div>
+          <div class="vidzhet-vishlist">
+            <div class="vidzhet-vishlist__body">
+                  <svg class="icon icon--heart_black ">
+                    <use xlink:href="images/icons.svg#icon--heart_black"></use>
+                  </svg><span>ADDED TO WISHLIST</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-7 offset-md-5">
+            <h1 class="banner__title">Welcome to Pelevita store — exclusive distributor of SHOR Cosmetics in USA and Canada</h1><a class="btn" href="#" role="button" target="_blank"><span class="btn__text">LEARN MORE</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="categories">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="h2">CATEGORIES</h2>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-12">
+            <div class="categories__item categories__item--mb-54">
+              <h3 class="categories__title">AGE REBEL</h3><span class="categories__desc">Unique line of skin care products for men and women</span>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-12 col-md-7">
+            <div class="categories__item categories__item--mr-50 categories__item--mb-25 categories__item--bg-1">
+              <h3 class="categories__title">HAPPY AGING</h3><span class="categories__desc">Unique line of skin care products for men and women</span>
+            </div>
+          </div>
+          <div class="col-12 col-md-5">
+            <div class="categories__item categories__item--bg-2">
+              <h3 class="categories__title">NEW PERCEPTION</h3><span class="categories__desc">Unique line of skin care products for men and women</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bllock-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="h2 h2--28">NEW IN</h2>
+            <ul class="slider-product">
+              <li class="slider-product__item">
+                                <div class="product">
+                                  <div class="product__img"><a class="product__img-link" href="#"><img src="images/img-product-4.jpg" alt="AGE REBEL"></a></div>
+                                  <div class="product__desc"><a class="product__desc-link" href="#">
+                                      <p>Cleansing Milk Pleasure for women</p></a></div>
+                                  <div class="product__title"><a class="product__desc-link" href="#">
+                                      <h3>AGE REBEL</h3></a></div>
+                                  <ul class="product__star">
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                  </ul>
+                                  <div class="product__price"><span>$49.90</span></div>
+                                  <div class="product__action">
+                                                      <button class="btn" type="button"><span class="btn__text">ADD TO CART</span>
+                                                      </button>
+                                  </div>
+                                  <div class="product__offer"><span class="product__new-hot">hot</span>
+                                  </div>
+                                  <div class="product__like">
+                                    <button class="product__btn-like" type="button"></button>
+                                  </div>
+                                </div>
+              </li>
+              <li class="slider-product__item">
+                                <div class="product">
+                                  <div class="product__img"><a class="product__img-link" href="#"><img src="images/img-product-5.jpg" alt="AGE REBEL"></a></div>
+                                  <div class="product__desc"><a class="product__desc-link" href="#">
+                                      <p>Cleansing Milk Pleasure for women</p></a></div>
+                                  <div class="product__title"><a class="product__desc-link" href="#">
+                                      <h3>AGE REBEL</h3></a></div>
+                                  <ul class="product__star">
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                  </ul>
+                                  <div class="product__price"><span>$49.90</span></div>
+                                  <div class="product__action">
+                                                      <button class="btn" type="button"><span class="btn__text">ADD TO CART</span>
+                                                      </button>
+                                  </div>
+                                  <div class="product__offer">
+                                    <pan class="product__new-top">top</pan>
+                                  </div>
+                                  <div class="product__like">
+                                    <button class="product__btn-like" type="button"></button>
+                                  </div>
+                                </div>
+              </li>
+              <li class="slider-product__item">
+                                <div class="product">
+                                  <div class="product__img"><a class="product__img-link" href="#"><img src="images/img-product-7.jpg" alt="AGE REBEL"></a></div>
+                                  <div class="product__desc"><a class="product__desc-link" href="#">
+                                      <p>Cleansing Milk Pleasure for women</p></a></div>
+                                  <div class="product__title"><a class="product__desc-link" href="#">
+                                      <h3>AGE REBEL</h3></a></div>
+                                  <ul class="product__star">
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                  </ul>
+                                  <div class="product__price"><span>$49.90</span></div>
+                                  <div class="product__action">
+                                                      <button class="btn" type="button"><span class="btn__text">ADD TO CART</span>
+                                                      </button>
+                                  </div>
+                                  <div class="product__offer"><span class="product__new-new">new</span>
+                                  </div>
+                                  <div class="product__like">
+                                    <button class="product__btn-like" type="button"></button>
+                                  </div>
+                                </div>
+              </li>
+              <li class="slider-product__item">
+                                <div class="product">
+                                  <div class="product__img"><a class="product__img-link" href="#"><img src="images/img-product-4.jpg" alt="AGE REBEL"></a></div>
+                                  <div class="product__desc"><a class="product__desc-link" href="#">
+                                      <p>Cleansing Milk Pleasure for women</p></a></div>
+                                  <div class="product__title"><a class="product__desc-link" href="#">
+                                      <h3>AGE REBEL</h3></a></div>
+                                  <ul class="product__star">
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                  </ul>
+                                  <div class="product__price"><span>$49.90</span></div>
+                                  <div class="product__action">
+                                                      <button class="btn" type="button"><span class="btn__text">ADD TO CART</span>
+                                                      </button>
+                                  </div>
+                                  <div class="product__offer">
+                                    <pan class="product__new-top">top</pan>
+                                  </div>
+                                  <div class="product__like">
+                                    <button class="product__btn-like" type="button"></button>
+                                  </div>
+                                </div>
+              </li>
+              <li class="slider-product__item">
+                                <div class="product">
+                                  <div class="product__img"><a class="product__img-link" href="#"><img src="images/img-product-5.jpg" alt="AGE REBEL"></a></div>
+                                  <div class="product__desc"><a class="product__desc-link" href="#">
+                                      <p>Cleansing Milk Pleasure for women</p></a></div>
+                                  <div class="product__title"><a class="product__desc-link" href="#">
+                                      <h3>AGE REBEL</h3></a></div>
+                                  <ul class="product__star">
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                  </ul>
+                                  <div class="product__price"><span>$49.90</span></div>
+                                  <div class="product__action">
+                                                      <button class="btn" type="button"><span class="btn__text">ADD TO CART</span>
+                                                      </button>
+                                  </div>
+                                  <div class="product__offer"><span class="product__new-hot">hot</span>
+                                  </div>
+                                  <div class="product__like">
+                                    <button class="product__btn-like" type="button"></button>
+                                  </div>
+                                </div>
+              </li>
+              <li class="slider-product__item">
+                                <div class="product">
+                                  <div class="product__img"><a class="product__img-link" href="#"><img src="images/img-product-7.jpg" alt="AGE REBEL"></a></div>
+                                  <div class="product__desc"><a class="product__desc-link" href="#">
+                                      <p>Cleansing Milk Pleasure for women</p></a></div>
+                                  <div class="product__title"><a class="product__desc-link" href="#">
+                                      <h3>AGE REBEL</h3></a></div>
+                                  <ul class="product__star">
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                  </ul>
+                                  <div class="product__price"><span>$49.90</span></div>
+                                  <div class="product__action">
+                                                      <button class="btn" type="button"><span class="btn__text">ADD TO CART</span>
+                                                      </button>
+                                  </div>
+                                  <div class="product__offer">
+                                    <pan class="product__new-top">top</pan>
+                                  </div>
+                                  <div class="product__like">
+                                    <button class="product__btn-like" type="button"></button>
+                                  </div>
+                                </div>
+              </li>
+              <li class="slider-product__item">
+                                <div class="product">
+                                  <div class="product__img"><a class="product__img-link" href="#"><img src="images/img-product-1.jpg" alt="AGE REBEL"></a></div>
+                                  <div class="product__desc"><a class="product__desc-link" href="#">
+                                      <p>Cleansing Milk Pleasure for women</p></a></div>
+                                  <div class="product__title"><a class="product__desc-link" href="#">
+                                      <h3>AGE REBEL</h3></a></div>
+                                  <ul class="product__star">
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                  </ul>
+                                  <div class="product__price"><span>$49.90</span></div>
+                                  <div class="product__action">
+                                                      <button class="btn" type="button"><span class="btn__text">ADD TO CART</span>
+                                                      </button>
+                                  </div>
+                                  <div class="product__offer"><span class="product__new-new">new</span>
+                                  </div>
+                                  <div class="product__like">
+                                    <button class="product__btn-like" type="button"></button>
+                                  </div>
+                                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bllock-2">
+      <h2 class="visually-hidden">Merchandise</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-5">
+            <div class="img-border">
+              <div class="img-border__body"><img src="images/img-product.jpg" alt="product"></div>
+            </div>
+          </div>
+          <div class="col-12 col-md-7">
+            <h3 class="h3 mr-b-20">STRONG MAN,  SOFT SKIN</h3>
+            <p class="text text--normal-lh-30 mr-b-57">The cream has excellent stimulating and tightening properties, prevents moisture loss and the formation of fine wrinkles, eliminates inflammatory processes. The action of the components is aimed at preventing and eliminating the causes of the formation of wrinkles, “bags” and dark circles in the orbital zone.</p><a class="btn btn--flat" href="#" role="button" target="_blank"><span class="btn__text">SHOP NOW</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner banner--bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <p class="banner__text">Shor Cosmetics is a state-of-the art trademark brand and the crown jewel of O.S.A. Cosmetics, an Israeli company with more than a twenty- year history of producing professional-quality cosmetics under various brands.</p>
+            <p class="banner__text mr-b-50">They use the best that nature has to offer to make each one of us more beautiful. The Shor Cosmetics line includes the best and most innovative products developed over the course of the company’s extensive production experience.</p><a class="btn" href="#" role="button" target="_blank"><span class="btn__text">LEARN MORE</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bllock-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="h2 h2--28">BEST SELLING PRODUCTS</h2>
+            <ul class="slider-product">
+              <li class="slider-product__item">
+                                <div class="product">
+                                  <div class="product__img"><a class="product__img-link" href="#"><img src="images/img-product-4.jpg" alt="AGE REBEL"></a></div>
+                                  <div class="product__desc"><a class="product__desc-link" href="#">
+                                      <p>Cleansing Milk Pleasure for women</p></a></div>
+                                  <div class="product__title"><a class="product__desc-link" href="#">
+                                      <h3>AGE REBEL</h3></a></div>
+                                  <ul class="product__star">
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                  </ul>
+                                  <div class="product__price"><span>$49.90</span></div>
+                                  <div class="product__action">
+                                                      <button class="btn" type="button"><span class="btn__text">ADD TO CART</span>
+                                                      </button>
+                                  </div>
+                                  <div class="product__offer"><span class="product__new-best">best</span>
+                                  </div>
+                                  <div class="product__like">
+                                    <button class="product__btn-like" type="button"></button>
+                                  </div>
+                                </div>
+              </li>
+              <li class="slider-product__item">
+                                <div class="product">
+                                  <div class="product__img"><a class="product__img-link" href="#"><img src="images/img-product-5.jpg" alt="AGE REBEL"></a></div>
+                                  <div class="product__desc"><a class="product__desc-link" href="#">
+                                      <p>Cleansing Milk Pleasure for women</p></a></div>
+                                  <div class="product__title"><a class="product__desc-link" href="#">
+                                      <h3>AGE REBEL</h3></a></div>
+                                  <ul class="product__star">
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                  </ul>
+                                  <div class="product__price"><span>$49.90</span></div>
+                                  <div class="product__action">
+                                                      <button class="btn" type="button"><span class="btn__text">ADD TO CART</span>
+                                                      </button>
+                                  </div>
+                                  <div class="product__offer">
+                                  </div>
+                                  <div class="product__like">
+                                    <button class="product__btn-like" type="button"></button>
+                                  </div>
+                                </div>
+              </li>
+              <li class="slider-product__item">
+                                <div class="product">
+                                  <div class="product__img"><a class="product__img-link" href="#"><img src="images/img-product-7.jpg" alt="AGE REBEL"></a></div>
+                                  <div class="product__desc"><a class="product__desc-link" href="#">
+                                      <p>Cleansing Milk Pleasure for women</p></a></div>
+                                  <div class="product__title"><a class="product__desc-link" href="#">
+                                      <h3>AGE REBEL</h3></a></div>
+                                  <ul class="product__star">
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                  </ul>
+                                  <div class="product__price"><span>$49.90</span></div>
+                                  <div class="product__action">
+                                                      <button class="btn" type="button"><span class="btn__text">ADD TO CART</span>
+                                                      </button>
+                                  </div>
+                                  <div class="product__offer">
+                                  </div>
+                                  <div class="product__like">
+                                    <button class="product__btn-like" type="button"></button>
+                                  </div>
+                                </div>
+              </li>
+              <li class="slider-product__item">
+                                <div class="product">
+                                  <div class="product__img"><a class="product__img-link" href="#"><img src="images/img-product-4.jpg" alt="AGE REBEL"></a></div>
+                                  <div class="product__desc"><a class="product__desc-link" href="#">
+                                      <p>Cleansing Milk Pleasure for women</p></a></div>
+                                  <div class="product__title"><a class="product__desc-link" href="#">
+                                      <h3>AGE REBEL</h3></a></div>
+                                  <ul class="product__star">
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                  </ul>
+                                  <div class="product__price"><span>$49.90</span></div>
+                                  <div class="product__action">
+                                                      <button class="btn" type="button"><span class="btn__text">ADD TO CART</span>
+                                                      </button>
+                                  </div>
+                                  <div class="product__offer">
+                                  </div>
+                                  <div class="product__like">
+                                    <button class="product__btn-like" type="button"></button>
+                                  </div>
+                                </div>
+              </li>
+              <li class="slider-product__item">
+                                <div class="product">
+                                  <div class="product__img"><a class="product__img-link" href="#"><img src="images/img-product-5.jpg" alt="AGE REBEL"></a></div>
+                                  <div class="product__desc"><a class="product__desc-link" href="#">
+                                      <p>Cleansing Milk Pleasure for women</p></a></div>
+                                  <div class="product__title"><a class="product__desc-link" href="#">
+                                      <h3>AGE REBEL</h3></a></div>
+                                  <ul class="product__star">
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                  </ul>
+                                  <div class="product__price"><span>$49.90</span></div>
+                                  <div class="product__action">
+                                                      <button class="btn" type="button"><span class="btn__text">ADD TO CART</span>
+                                                      </button>
+                                  </div>
+                                  <div class="product__offer">
+                                  </div>
+                                  <div class="product__like">
+                                    <button class="product__btn-like" type="button"></button>
+                                  </div>
+                                </div>
+              </li>
+              <li class="slider-product__item">
+                                <div class="product">
+                                  <div class="product__img"><a class="product__img-link" href="#"><img src="images/img-product-7.jpg" alt="AGE REBEL"></a></div>
+                                  <div class="product__desc"><a class="product__desc-link" href="#">
+                                      <p>Cleansing Milk Pleasure for women</p></a></div>
+                                  <div class="product__title"><a class="product__desc-link" href="#">
+                                      <h3>AGE REBEL</h3></a></div>
+                                  <ul class="product__star">
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                  </ul>
+                                  <div class="product__price"><span>$49.90</span></div>
+                                  <div class="product__action">
+                                                      <button class="btn" type="button"><span class="btn__text">ADD TO CART</span>
+                                                      </button>
+                                  </div>
+                                  <div class="product__offer">
+                                  </div>
+                                  <div class="product__like">
+                                    <button class="product__btn-like" type="button"></button>
+                                  </div>
+                                </div>
+              </li>
+              <li class="slider-product__item">
+                                <div class="product">
+                                  <div class="product__img"><a class="product__img-link" href="#"><img src="images/img-product-1.jpg" alt="AGE REBEL"></a></div>
+                                  <div class="product__desc"><a class="product__desc-link" href="#">
+                                      <p>Cleansing Milk Pleasure for women</p></a></div>
+                                  <div class="product__title"><a class="product__desc-link" href="#">
+                                      <h3>AGE REBEL</h3></a></div>
+                                  <ul class="product__star">
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                    <li class="product__star-item"><img src="images/img-product-star.png" alt="star"></li>
+                                  </ul>
+                                  <div class="product__price"><span>$49.90</span></div>
+                                  <div class="product__action">
+                                                      <button class="btn" type="button"><span class="btn__text">ADD TO CART</span>
+                                                      </button>
+                                  </div>
+                                  <div class="product__offer">
+                                  </div>
+                                  <div class="product__like">
+                                    <button class="product__btn-like" type="button"></button>
+                                  </div>
+                                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+                        <div class="service">
+                          <div class="service__img"><img src="images/service-charity.png" alt="charity"></div>
+                          <div class="service__title">
+                            <h3>700+ CLIENTS LOVE US!</h3>
+                          </div>
+                          <div class="service__desc">
+                            <p>We offer best service and great prices on high quality products</p>
+                          </div>
+                        </div>
+          </div>
+          <div class="col-12 col-md-4">
+                        <div class="service">
+                          <div class="service__img"><img src="images/service-tracking.png" alt="tracking"></div>
+                          <div class="service__title">
+                            <h3>SHIPPING TO USA AND CANADA</h3>
+                          </div>
+                          <div class="service__desc">
+                            <p>Our store operates worldwide and you can enjoy free delivery of all orders</p>
+                          </div>
+                        </div>
+          </div>
+          <div class="col-12 col-md-4">
+                        <div class="service">
+                          <div class="service__img"><img src="images/service-credit-card.png" alt="credit-card"></div>
+                          <div class="service__title">
+                            <h3>100% SAFE PAYMENT</h3>
+                          </div>
+                          <div class="service__desc">
+                            <p>Buy with confidence using the world’s most popular and secure payment methods</p>
+                          </div>
+                        </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bllock-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <ul class="slider-reviews">
+              <li class="slider-reviews__item">
+                                <div class="review">
+                                  <div class="review__autor"><span style="background-color:#fe7194;">m</span></div>
+                                  <div class="review__info"> 
+                                    <div class="review__info-top">
+                                      <ul class="review__rating">
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                      </ul>
+                                    </div>
+                                    <p class="review__title">Using for 5 years now!!</p>
+                                    <p class="review__name">Name of customer</p>
+                                    <p class="review__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+                                  </div>
+                                </div>
+              </li>
+              <li class="slider-reviews__item">
+                                <div class="review">
+                                  <div class="review__autor"><span style="background-color:#63c4ba;">v</span></div>
+                                  <div class="review__info"> 
+                                    <div class="review__info-top">
+                                      <ul class="review__rating">
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                      </ul>
+                                    </div>
+                                    <p class="review__title">Using for 5 years now!!</p>
+                                    <p class="review__name">Name of customer</p>
+                                    <p class="review__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+                                  </div>
+                                </div>
+              </li>
+              <li class="slider-reviews__item">
+                                <div class="review">
+                                  <div class="review__autor"><span style="background-color:#7f60be;">g</span></div>
+                                  <div class="review__info"> 
+                                    <div class="review__info-top">
+                                      <ul class="review__rating">
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                      </ul>
+                                    </div>
+                                    <p class="review__title">Using for 5 years now!!</p>
+                                    <p class="review__name">Name of customer</p>
+                                    <p class="review__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+                                  </div>
+                                </div>
+              </li>
+              <li class="slider-reviews__item">
+                                <div class="review">
+                                  <div class="review__autor"><span style="background-color:#c46372;">b</span></div>
+                                  <div class="review__info"> 
+                                    <div class="review__info-top">
+                                      <ul class="review__rating">
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                      </ul>
+                                    </div>
+                                    <p class="review__title">Using for 5 years now!!</p>
+                                    <p class="review__name">Name of customer</p>
+                                    <p class="review__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+                                  </div>
+                                </div>
+              </li>
+              <li class="slider-reviews__item">
+                                <div class="review">
+                                  <div class="review__autor"><span style="background-color:#fe7194;">r</span></div>
+                                  <div class="review__info"> 
+                                    <div class="review__info-top">
+                                      <ul class="review__rating">
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                      </ul>
+                                    </div>
+                                    <p class="review__title">Using for 5 years now!!</p>
+                                    <p class="review__name">Name of customer</p>
+                                    <p class="review__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+                                  </div>
+                                </div>
+              </li>
+              <li class="slider-reviews__item">
+                                <div class="review">
+                                  <div class="review__autor"><span style="background-color:#fe7194;">a</span></div>
+                                  <div class="review__info"> 
+                                    <div class="review__info-top">
+                                      <ul class="review__rating">
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                      </ul>
+                                    </div>
+                                    <p class="review__title">Using for 5 years now!!</p>
+                                    <p class="review__name">Name of customer</p>
+                                    <p class="review__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+                                  </div>
+                                </div>
+              </li>
+              <li class="slider-reviews__item">
+                                <div class="review">
+                                  <div class="review__autor"><span style="background-color:#7f60be;">t</span></div>
+                                  <div class="review__info"> 
+                                    <div class="review__info-top">
+                                      <ul class="review__rating">
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                        <li class="review__rating-item"><img src="images/img-product-star.png" alt="star"></li>
+                                      </ul>
+                                    </div>
+                                    <p class="review__title">Using for 5 years now!!</p>
+                                    <p class="review__name">Name of customer</p>
+                                    <p class="review__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+                                  </div>
+                                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6 col-lg-7">
+              <div class="footer__left">
+                <div class="footer__follow"> <span>Follow Us</span></div>
+                <div class="footer__social"> 
+                  <ul class="social-icon">
+                    <li class="social-icon__item"><a href="#"><span class="visually-hidden">Facebook</span>
+                            <svg class="icon icon--facebook ">
+                              <use xlink:href="images/icons.svg#icon--facebook"></use>
+                            </svg></a></li>
+                    <li class="social-icon__item"><a href="#"><span class="visually-hidden">Instagram</span>
+                            <svg class="icon icon--instagram ">
+                              <use xlink:href="images/icons.svg#icon--instagram"></use>
+                            </svg></a></li>
+                    <li class="social-icon__item"><a href="#"><span class="visually-hidden">Twitter</span>
+                            <svg class="icon icon--twitter ">
+                              <use xlink:href="images/icons.svg#icon--twitter"></use>
+                            </svg></a></li>
+                    <li class="social-icon__item"><a href="#"><span class="visually-hidden">Youtube</span>
+                            <svg class="icon icon--youtube ">
+                              <use xlink:href="images/icons.svg#icon--youtube"></use>
+                            </svg></a></li>
+                    <li class="social-icon__item"><a href="#"><span class="visually-hidden">Pinterest</span>
+                            <svg class="icon icon--pinterest ">
+                              <use xlink:href="images/icons.svg#icon--pinterest"></use>
+                            </svg></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="footer__right">
+                <div class="footer__contacts">
+                  <div class="footer__phone"><a class="icon-phone" href="tel:+972532741038">
+                          <svg class="icon icon--phone ">
+                            <use xlink:href="images/icons.svg#icon--phone"></use>
+                          </svg><span>+972532741038</span></a></div>
+                  <div class="footer__mail">
+                                        <div class="icon-link"><a class="icon-link__body" href="mailto:support@pelevita.com">
+                                                <svg class="icon icon--envelope ">
+                                                  <use xlink:href="images/icons.svg#icon--envelope"></use>
+                                                </svg><span>SUPPORT@PELEVITA.COM</span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__body">
+        <div class="container">
+          <div class="row"> 
+            <div class="col-12 col-md-2">
+              <div class="footer__logo"><a class="logo" href="/">
+                  <picture><img src="images/logo.png" alt="Pelevita"></picture></a></div>
+            </div>
+            <div class="col-12 col-md-2">
+              <div class="footer__menu">
+                <h3>SHOP</h3>
+                                <ul class="menu-vertical__list">
+                                  <li class="menu-vertical__item"><a class="menu-vertical__link" href="#">Сatalog</a></li>
+                                  <li class="menu-vertical__item"><a class="menu-vertical__link" href="#">Tracking</a></li>
+                                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="footer__menu">
+                <h3>PURCHASE INFOё</h3>
+                                <ul class="menu-vertical__list">
+                                  <li class="menu-vertical__item"><a class="menu-vertical__link" href="#">Refunds &amp; Returns Policy</a></li>
+                                  <li class="menu-vertical__item"><a class="menu-vertical__link" href="#">Payment Methods</a></li>
+                                  <li class="menu-vertical__item"><a class="menu-vertical__link" href="#">Shipping &amp; Delivery</a></li>
+                                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-2">
+              <div class="footer__menu">
+                <h3>COMPANY INFO</h3>
+                                <ul class="menu-vertical__list">
+                                  <li class="menu-vertical__item"><a class="menu-vertical__link" href="#">Contacts</a></li>
+                                  <li class="menu-vertical__item"><a class="menu-vertical__link" href="#">About Us</a></li>
+                                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="footer__menu">
+                <h3>LEGAL INFORMATION</h3>
+                                <ul class="menu-vertical__list">
+                                  <li class="menu-vertical__item"><a class="menu-vertical__link" href="#">Privacy Policy</a></li>
+                                  <li class="menu-vertical__item"><a class="menu-vertical__link" href="#">Terms &amp; Conditions</a></li>
+                                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bootom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-7">
+              <div class="footer__copyright"><span>Copyright 2019 © pelevita.com</span></div>
+            </div>
+            <div class="col-12 col-md-5">
+              <div class="footer__cards">
+                <ul class="cards">
+                  <li class="cards__item"><span class="visually-hidden">Visa</span>
+                        <svg class="icon icon--visa ">
+                          <use xlink:href="images/icons.svg#icon--visa"></use>
+                        </svg>
+                  </li>
+                  <li class="cards__item"><span class="visually-hidden">Mastercard</span>
+                        <svg class="icon icon--mastercard ">
+                          <use xlink:href="images/icons.svg#icon--mastercard"></use>
+                        </svg>
+                  </li>
+                  <li class="cards__item"><span class="visually-hidden">Paypal</span>
+                        <svg class="icon icon--paypal ">
+                          <use xlink:href="images/icons.svg#icon--paypal"></use>
+                        </svg>
+                  </li>
+                  <li class="cards__item"><span class="visually-hidden">Stripe</span>
+                        <svg class="icon icon--stripe ">
+                          <use xlink:href="images/icons.svg#icon--stripe"></use>
+                        </svg>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal modal-call" id="modal_contact">
+      <p class="modal-call__title">Request a call</p>
+      <form class="modal-call__form" action="#" method="post">
+        <label class="visually-hidden" for="login">name</label>
+        <input type="text" name="login" id="login" placeholder="Enter your name">
+        <label class="visually-hidden" for="tel">phone</label>
+        <input type="tel" name="tel" id="tel" placeholder="Enter your phone number">
+        <div class="modal-call__action">
+          <button class="modal-call__btn" type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+    <div class="to-top">
+          <svg class="icon icon--chevron-up ">
+            <use xlink:href="images/icons.svg#icon--chevron-up"></use>
+          </svg>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.modal.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/selectize.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>$(document).ready(function () {	svg4everybody({});});</script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

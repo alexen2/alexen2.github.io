@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" href="images/favicon.ico">
+      <title>Pelevita</title>
+      <link href="css/jquery.modal.min.css" rel="stylesheet">
+      <link href="css/selectize.css" rel="stylesheet">
+      <link href="css/slick.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet"><!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-3 col-lg-5 d-none d-md-block">
+              <div class="header__social"> 
+                <ul class="social-icon">
+                  <li class="social-icon__item"><a href="#"><span class="visually-hidden">Facebook</span>
+                          <svg class="icon icon--facebook ">
+                            <use xlink:href="images/icons.svg#icon--facebook"></use>
+                          </svg></a></li>
+                  <li class="social-icon__item"><a href="#"><span class="visually-hidden">Instagram</span>
+                          <svg class="icon icon--instagram ">
+                            <use xlink:href="images/icons.svg#icon--instagram"></use>
+                          </svg></a></li>
+                  <li class="social-icon__item"><a href="#"><span class="visually-hidden">Twitter</span>
+                          <svg class="icon icon--twitter ">
+                            <use xlink:href="images/icons.svg#icon--twitter"></use>
+                          </svg></a></li>
+                  <li class="social-icon__item"><a href="#"><span class="visually-hidden">Youtube</span>
+                          <svg class="icon icon--youtube ">
+                            <use xlink:href="images/icons.svg#icon--youtube"></use>
+                          </svg></a></li>
+                  <li class="social-icon__item"><a href="#"><span class="visually-hidden">Pinterest</span>
+                          <svg class="icon icon--pinterest ">
+                            <use xlink:href="images/icons.svg#icon--pinterest"></use>
+                          </svg></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-9 col-lg-7">
+              <div class="header__top-right">
+                <div class="header__mail">
+                                    <div class="icon-link icon-link__body--12"><a class="icon-link__body" href="mailto:support@pelevita.com">
+                                            <svg class="icon icon--envelope ">
+                                              <use xlink:href="images/icons.svg#icon--envelope"></use>
+                                            </svg><span>SUPPORT@PELEVITA.COM</span></a></div>
+                </div>
+                <div class="header__phone"><a class="icon-phone" href="tel:+972532741038">
+                        <svg class="icon icon--phone ">
+                          <use xlink:href="images/icons.svg#icon--phone"></use>
+                        </svg><span>+972532741038</span></a></div>
+                <div class="header__action"><a class="btn btn--sm modal-link" href="#modal_contact" role="button" target="_blank"><span class="btn__text">CALLBACK</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__navigation">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-5">
+              <div class="header__menu header__mobile">
+                                <nav class="menu">
+                                  <ul class="menu__list">
+                                    <li class="menu__item menu__item--active"><a class="menu__link" href="">CATALOG</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="">TRACKING</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="">CONTACTS</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="">ABOUT US</a></li>
+                                  </ul>
+                                </nav>
+              </div>
+            </div>
+            <div class="col-3 col-sm-2 col-lg-2">
+              <div class="header__logo"><a class="logo" href="/">
+                  <picture><img src="images/logo.png" alt="Pelevita"></picture></a></div>
+            </div>
+            <div class="col-9 col-sm-10 col-lg-5">
+              <div class="header__user-navigation">
+                <div class="user"><a class="user__login" href="#">
+                        <svg class="icon icon--user ">
+                          <use xlink:href="images/icons.svg#icon--user"></use>
+                        </svg><span>LOGIN</span></a>
+                  <div class="user__bag">
+                    <div class="user__bag-img"><span class="user__bag-number">1</span></div><span>129,3</span>
+                  </div>
+                  <div class="user__currency">
+                                        <div class="currency-select">
+                                          <select class="currency-select__select" name="currency">
+                                            <option selected value="USD">USD</option>
+                                            <option value="CAD">CAD</option>
+                                          </select>
+                                        </div>
+                  </div>
+                  <div class="user__like"> 
+                        <svg class="icon icon--heart_black ">
+                          <use xlink:href="images/icons.svg#icon--heart_black"></use>
+                        </svg><span class="user__like-number">1</span>
+                  </div>
+                </div>
+                <button class="header__btn" type="button"><span class="visually-hidden">Открыть меню</span><span class="header__btn-visual"></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__widget">
+          <div class="header__widget-overlay"></div>
+          <div class="basket-widget">
+            <h2 class="basket-widget__title">YOUR BAG (3 ITEMS)</h2>
+            <ul class="basket-widget__list">
+              <li class="basket-widget__item">
+                <div class="item-basket">
+                  <div class="item-basket__img"><a href="#"><img src="images/item-basket-img.jpg" alt="product"></a></div>
+                  <div class="item-basket__description"><a class="item-basket__title" href="">Cleansing Milk Pleasure for women</a><span> 9.9 OZ.</span><a class="item-basket__remove" href="">Remove</a></div>
+                  <div class="item-basket__action">
+                                        <div class="quantity quantity--sm">
+                                          <div class="quantity-button quantity-down"><span>-</span></div>
+                                          <input type="number" min="1" max="1000" step="1" value="1">
+                                          <div class="quantity-button quantity-up"><span>+</span></div>
+                                        </div>
+                  </div>
+                  <div class="item-basket__cost">
+                    <p>$49.90</p>
+                  </div>
+                </div>
+              </li>
+              <li class="basket-widget__item">
+                <div class="item-basket">
+                  <div class="item-basket__img"><a href="#"><img src="images/item-basket-img.jpg" alt="product"></a></div>
+                  <div class="item-basket__description"><a class="item-basket__title" href="">Cleansing Milk Pleasure for women</a><span> 9.9 OZ.</span><a class="item-basket__remove" href="">Remove</a></div>
+                  <div class="item-basket__action">
+                                        <div class="quantity quantity--sm">
+                                          <div class="quantity-button quantity-down"><span>-</span></div>
+                                          <input type="number" min="1" max="1000" step="1" value="1">
+                                          <div class="quantity-button quantity-up"><span>+</span></div>
+                                        </div>
+                  </div>
+                  <div class="item-basket__cost">
+                    <p>$49.90</p>
+                  </div>
+                </div>
+              </li>
+              <li class="basket-widget__item">
+                <div class="item-basket">
+                  <div class="item-basket__img"><a href="#"><img src="images/item-basket-img.jpg" alt="product"></a></div>
+                  <div class="item-basket__description"><a class="item-basket__title" href="">Cleansing Milk Pleasure for women</a><span> 9.9 OZ.</span><a class="item-basket__remove" href="">Remove</a></div>
+                  <div class="item-basket__action">
+                                        <div class="quantity quantity--sm">
+                                          <div class="quantity-button quantity-down"><span>-</span></div>
+                                          <input type="number" min="1" max="1000" step="1" value="1">
+                                          <div class="quantity-button quantity-up"><span>+</span></div>
+                                        </div>
+                  </div>
+                  <div class="item-basket__cost">
+                    <p>$49.90</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="basket-widget__total"><span class="basket-widget__text">SUBTOTAL: </span><span class="basket-widget__sum">$149,7</span></div>
+            <div class="basket-widget__action"> <a href="">CONTINUE SHOPPING</a><span>OR</span>
+                                <button class="btn btn--flat" type="button"><span class="btn__text">CHECKOUT</span>
+                                </button>
+            </div>
+          </div>
+          <div class="vidzhet-vishlist">
+            <div class="vidzhet-vishlist__body">
+                  <svg class="icon icon--heart_black ">
+                    <use xlink:href="images/icons.svg#icon--heart_black"></use>
+                  </svg><span>ADDED TO WISHLIST</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="page-navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+                        <div class="breadcrumbs">
+                          <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Main page</a>
+                            </li>
+                            <li class="breadcrumbs__item"><span>Contacts</span>
+                            </li>
+                          </ul>
+                        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="contacts">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <h2 class="h2">LET'S KEEP IN TOUCH!</h2>
+            <p class="text text--16">For all your questions or requests about cosmetics, do not hesitate to contact us.  You will receive an answer as soon as possible.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="contacts__img"><img src="images/img-contacts.jpg" alt="Pelevita"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="contacts__container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="contacts__left">
+                <div class="forma">
+                  <form class="forma__form" action="#" method="post">
+                    <fieldset class="forma__innput">
+                      <div class="forma__item-input">
+                        <label for="login">Nickname*</label>
+                        <input type="text" name="login" id="login" placeholder="Enter your name">
+                      </div>
+                      <div class="forma__item-input">
+                        <label for="email">Email*</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email (private)">
+                      </div>
+                    </fieldset>
+                    <fieldset class="forma__textarea">
+                      <label for="massage">Massage*</label>
+                      <textarea id="massage" name="massage" rows="5" placeholder="Your massage"></textarea><span>Required fields are marked with *</span>
+                    </fieldset>
+                    <div class="forma__action">
+                      <button class="forma__btn" type="submit">SEND</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="contacts__right">
+                <h3 class="contacts__title">CONTACTS</h3>
+                <p class="text text--12">Communication with and feedback from you are critical to us, no less than the high quality of our cosmetics themselves. Do not hesitate to write – we are happy to answer any questions.</p>
+                <div class="contacts__phone"><a class="icon-phone" href="tel:+972532741038">
+                        <svg class="icon icon--phone ">
+                          <use xlink:href="images/icons.svg#icon--phone"></use>
+                        </svg><span>+972532741038</span></a></div>
+                <div class="contacts__mail">
+                                    <div class="icon-link icon-link__body--12"><a class="icon-link__body" href="mailto:support@pelevita.com">
+                                            <svg class="icon icon--envelope ">
+                                              <use xlink:href="images/icons.svg#icon--envelope"></use>
+                                            </svg><span>SUPPORT@PELEVITA.COM</span></a></div>
+                </div>
+                <h3 class="contacts__title">JULIA PASHA — COMPANY CREATOR</h3>
+                <p class="text text--12">I am ready to answer your questions personally at any time – just write me at my personal email. I’ll give you an exclusive discount just for writing and registering on our site.</p>
+                <div class="contacts__email"><img src="images/img-contacs-emal.png" alt="@"><a href="mailto:julia@pelevita.com">julia@pelevita.com</a></div>
+                <h3 class="contacts__title">ADDRESS</h3>
+                <div class="contacts__adress">
+                      <svg class="icon icon--map-marker ">
+                        <use xlink:href="images/icons.svg#icon--map-marker"></use>
+                      </svg><span>Shmuel 3/36, Holon, Israel </span>
+                </div>
+                <div class="contacts__social">
+                  <h3 class="contacts__title">SOCIAL MEDIA</h3>
+                  <p class="text text--12">Follow us on social networks and keep up to date with our publications, new products and offers</p>
+                  <ul class="social-icon">
+                    <li class="social-icon__item"><a href="#"><span class="visually-hidden">Facebook</span>
+                            <svg class="icon icon--facebook ">
+                              <use xlink:href="images/icons.svg#icon--facebook"></use>
+                            </svg></a></li>
+                    <li class="social-icon__item"><a href="#"><span class="visually-hidden">Instagram</span>
+                            <svg class="icon icon--instagram ">
+                              <use xlink:href="images/icons.svg#icon--instagram"></use>
+                            </svg></a></li>
+                    <li class="social-icon__item"><a href="#"><span class="visually-hidden">Twitter</span>
+                            <svg class="icon icon--twitter ">
+                              <use xlink:href="images/icons.svg#icon--twitter"></use>
+                            </svg></a></li>
+                    <li class="social-icon__item"><a href="#"><span class="visually-hidden">Youtube</span>
+                            <svg class="icon icon--youtube ">
+                              <use xlink:href="images/icons.svg#icon--youtube"></use>
+                            </svg></a></li>
+                    <li class="social-icon__item"><a href="#"><span class="visually-hidden">Pinterest</span>
+                            <svg class="icon icon--pinterest ">
+                              <use xlink:href="images/icons.svg#icon--pinterest"></use>
+                            </svg></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6 col-lg-7">
+              <div class="footer__left">
+                <div class="footer__follow"> <span>Follow Us</span></div>
+                <div class="footer__social"> 
+                  <ul class="social-icon">
+                    <li class="social-icon__item"><a href="#"><span class="visually-hidden">Facebook</span>
+                            <svg class="icon icon--facebook ">
+                              <use xlink:href="images/icons.svg#icon--facebook"></use>
+                            </svg></a></li>
+                    <li class="social-icon__item"><a href="#"><span class="visually-hidden">Instagram</span>
+                            <svg class="icon icon--instagram ">
+                              <use xlink:href="images/icons.svg#icon--instagram"></use>
+                            </svg></a></li>
+                    <li class="social-icon__item"><a href="#"><span class="visually-hidden">Twitter</span>
+                            <svg class="icon icon--twitter ">
+                              <use xlink:href="images/icons.svg#icon--twitter"></use>
+                            </svg></a></li>
+                    <li class="social-icon__item"><a href="#"><span class="visually-hidden">Youtube</span>
+                            <svg class="icon icon--youtube ">
+                              <use xlink:href="images/icons.svg#icon--youtube"></use>
+                            </svg></a></li>
+                    <li class="social-icon__item"><a href="#"><span class="visually-hidden">Pinterest</span>
+                            <svg class="icon icon--pinterest ">
+                              <use xlink:href="images/icons.svg#icon--pinterest"></use>
+                            </svg></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="footer__right">
+                <div class="footer__contacts">
+                  <div class="footer__phone"><a class="icon-phone" href="tel:+972532741038">
+                          <svg class="icon icon--phone ">
+                            <use xlink:href="images/icons.svg#icon--phone"></use>
+                          </svg><span>+972532741038</span></a></div>
+                  <div class="footer__mail">
+                                        <div class="icon-link"><a class="icon-link__body" href="mailto:support@pelevita.com">
+                                                <svg class="icon icon--envelope ">
+                                                  <use xlink:href="images/icons.svg#icon--envelope"></use>
+                                                </svg><span>SUPPORT@PELEVITA.COM</span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__body">
+        <div class="container">
+          <div class="row"> 
+            <div class="col-12 col-md-2">
+              <div class="footer__logo"><a class="logo" href="/">
+                  <picture><img src="images/logo.png" alt="Pelevita"></picture></a></div>
+            </div>
+            <div class="col-12 col-md-2">
+              <div class="footer__menu">
+                <h3>SHOP</h3>
+                                <ul class="menu-vertical__list">
+                                  <li class="menu-vertical__item"><a class="menu-vertical__link" href="#">Сatalog</a></li>
+                                  <li class="menu-vertical__item"><a class="menu-vertical__link" href="#">Tracking</a></li>
+                                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="footer__menu">
+                <h3>PURCHASE INFOё</h3>
+                                <ul class="menu-vertical__list">
+                                  <li class="menu-vertical__item"><a class="menu-vertical__link" href="#">Refunds &amp; Returns Policy</a></li>
+                                  <li class="menu-vertical__item"><a class="menu-vertical__link" href="#">Payment Methods</a></li>
+                                  <li class="menu-vertical__item"><a class="menu-vertical__link" href="#">Shipping &amp; Delivery</a></li>
+                                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-2">
+              <div class="footer__menu">
+                <h3>COMPANY INFO</h3>
+                                <ul class="menu-vertical__list">
+                                  <li class="menu-vertical__item"><a class="menu-vertical__link" href="#">Contacts</a></li>
+                                  <li class="menu-vertical__item"><a class="menu-vertical__link" href="#">About Us</a></li>
+                                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="footer__menu">
+                <h3>LEGAL INFORMATION</h3>
+                                <ul class="menu-vertical__list">
+                                  <li class="menu-vertical__item"><a class="menu-vertical__link" href="#">Privacy Policy</a></li>
+                                  <li class="menu-vertical__item"><a class="menu-vertical__link" href="#">Terms &amp; Conditions</a></li>
+                                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bootom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-7">
+              <div class="footer__copyright"><span>Copyright 2019 © pelevita.com</span></div>
+            </div>
+            <div class="col-12 col-md-5">
+              <div class="footer__cards">
+                <ul class="cards">
+                  <li class="cards__item"><span class="visually-hidden">Visa</span>
+                        <svg class="icon icon--visa ">
+                          <use xlink:href="images/icons.svg#icon--visa"></use>
+                        </svg>
+                  </li>
+                  <li class="cards__item"><span class="visually-hidden">Mastercard</span>
+                        <svg class="icon icon--mastercard ">
+                          <use xlink:href="images/icons.svg#icon--mastercard"></use>
+                        </svg>
+                  </li>
+                  <li class="cards__item"><span class="visually-hidden">Paypal</span>
+                        <svg class="icon icon--paypal ">
+                          <use xlink:href="images/icons.svg#icon--paypal"></use>
+                        </svg>
+                  </li>
+                  <li class="cards__item"><span class="visually-hidden">Stripe</span>
+                        <svg class="icon icon--stripe ">
+                          <use xlink:href="images/icons.svg#icon--stripe"></use>
+                        </svg>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal modal-call" id="modal_contact">
+      <p class="modal-call__title">Request a call</p>
+      <form class="modal-call__form" action="#" method="post">
+        <label class="visually-hidden" for="login">name</label>
+        <input type="text" name="login" id="login" placeholder="Enter your name">
+        <label class="visually-hidden" for="tel">phone</label>
+        <input type="tel" name="tel" id="tel" placeholder="Enter your phone number">
+        <div class="modal-call__action">
+          <button class="modal-call__btn" type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+    <div class="to-top">
+          <svg class="icon icon--chevron-up ">
+            <use xlink:href="images/icons.svg#icon--chevron-up"></use>
+          </svg>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.modal.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/selectize.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>$(document).ready(function () {	svg4everybody({});});</script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
