@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Корзина</title>
+      <link href="css/jquery.modal.min.css" rel="stylesheet">
+      <link href="css/slick.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet"><!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__menu-mobile">
+            <div class="menu-mobile">
+              <div class="menu-mobile__body">
+                <div class="container">
+                  <div class="menu-mobile__top">
+                        <button class="hamburger hamburger--spin is-active" type="button" id="hamburger_open"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+                  </div>
+                  <nav>
+                    <ul>
+                      <li><a href="#">каталог</a></li>
+                      <li><a href="#">Как заказать</a></li>
+                      <li><a href="#">Оплата и доставка</a></li>
+                      <li><a href="#">Отзывы</a></li>
+                      <li><a href="#">Вопрос-ответ</a></li>
+                      <li><a href="#">О магазине</a></li>
+                      <li><a href="#">Контакты</a></li>
+                    </ul>
+                  </nav>
+                </div><a class="menu-mobile__cart" href="">
+                  <div class="panel panel--mobile">
+                    <div class="panel__item panel__item--yellow panel__cart"><img src="images/icon--cart.png" alt="icon"><span>5</span></div>
+                    <div class="panel__summ">Сумма:
+                      <div>1500 Р</div>
+                    </div>
+                  </div></a>
+                <div class="container center">
+                  <div><a class="menu-mobile__phone" href="tel:88005556033"> <img src="images/icon--phone-white2.png" alt=""><span>8 (800) 555-60-33</span></a></div><a class="menu-mobile__mail" href="mailto:zakaz@mail.ru">zakaz@mail.ru</a>
+                  <p class="menu-mobile__desc">Прием заказов круглосуточно<br>Интернет магазин по продаже часов Starry</p>
+                  <div class="menu-mobile__logo"><a class="logo" href="/"><img src="images/logo.svg" alt="StarryShop"></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__top">
+            <div class="header__hamburger">
+                            <button class="hamburger hamburger--spin" type="button" id="hamburger"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+            </div><a class="logo" href="/"><img src="images/logo.svg" alt="StarryShop"></a>
+            <div class="header__site-name">Интернет магазин по продаже часов Starry</div>
+            <div class="header__contacts"><a class="header__link header__mail" href="mailto:info@info.ru"><img src="images/icon--email-small.png" alt="icon email"><span>info@info.ru</span></a><a class="header__link header__tel" href="tel:88005556033"><img src="images/icon--phone.png" alt="icon phone"><span>8 (800) <b>555-60-33</b></span></a></div>
+            <div class="header__panel">
+              <div class="panel"><a class="panel__item" href="#"><img src="images/icon--star.png" alt="icon"></a>
+                <div class="panel__item panel__item--brown panel__user"><img src="images/icon--man.png" alt="icon">
+                  <div class="userbar">
+                    <div class="userbar__body"><a class="userbar__in" href="#">Войти</a><a class="userbar__reg" href="#">Регистрация</a></div>
+                  </div>
+                </div><a class="panel__item panel__item--yellow panel__cart" href="#"><img src="images/icon--cart.png" alt="icon"><span>5</span></a>
+                <div class="panel__summ">Сумма:
+                  <div>1500<img src="images/icon--rubl.png" alt="icon"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__bottom">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item"><a href="about.html">Каталог</a></li>
+                <li class="menu__item"><a href="price.html">Как заказать</a></li>
+                <li class="menu__item menu__item--active"><a href="price.html">Оплата и доставка</a></li>
+                <li class="menu__item"><a href="price.html">Отзывы</a></li>
+                <li class="menu__item"><a href="price.html">Вопрос-ответ</a></li>
+                <li class="menu__item"><a href="price.html">О магазине</a></li>
+                <li class="menu__item"><a href="price.html">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <page-container>
+        <div class="container">
+              <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                  <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Главная</a>
+                  </li>
+                  <li class="breadcrumbs__item"><span>Наручные часы Starry Flower Diamond</span>
+                  </li>
+                </ul>
+              </div>
+          <h1 class="h2">Корзина</h1>
+          <div class="cart">
+            <div class="cart__body">
+              <div class="cart__list">
+                <div class="cart__item">
+                      <div class="cart-item">
+                        <div class="cart-item__img"><a href="#"><img src="images/cart-item__img.png" alt=""></a></div>
+                        <div class="cart-item__body">
+                          <div class="cart-item__left"><a class="cart-item__title" href="#">
+                              <h2 class="h3">Наручные часы Starry Flower Diamond</h2></a>
+                            <div class="cart-item__edit"><a class="cart-item__star" href="#"><img src="images/icon--star-orange.png" alt=""></a><a class="cart-item__del" href="#"><img src="images/icon--del.png" alt=""></a>
+                                  <div class="quantity">
+                                    <div class="quantity__body">
+                                      <div class="quantity-button quantity-down"><span>-</span></div>
+                                      <input type="number" min="1" max="1000" step="1" value="1">
+                                      <div class="quantity-button quantity-up"><span>+</span></div>
+                                    </div>
+                                    <div class="quantity__footer">2750Р шт.</div>
+                                  </div>
+                            </div>
+                          </div>
+                          <div class="cart-item__right">
+                            <div class="cart-item__price">
+                              <div class="cart-item__price-new">65 500 ₽</div>
+                              <div class="cart-item__price-old">55 500 ₽</div>
+                            </div>
+                            <div class="cart-item__sale">Скидка 1849 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="cart__item">
+                      <div class="cart-item">
+                        <div class="cart-item__img"><a href="#"><img src="images/cart-item__img.png" alt=""></a></div>
+                        <div class="cart-item__body">
+                          <div class="cart-item__left"><a class="cart-item__title" href="#">
+                              <h2 class="h3">Наручные часы Starry Flower Diamond</h2></a>
+                            <div class="cart-item__edit"><a class="cart-item__star" href="#"><img src="images/icon--star-orange.png" alt=""></a><a class="cart-item__del" href="#"><img src="images/icon--del.png" alt=""></a>
+                                  <div class="quantity">
+                                    <div class="quantity__body">
+                                      <div class="quantity-button quantity-down"><span>-</span></div>
+                                      <input type="number" min="1" max="1000" step="1" value="1">
+                                      <div class="quantity-button quantity-up"><span>+</span></div>
+                                    </div>
+                                    <div class="quantity__footer">2750Р шт.</div>
+                                  </div>
+                            </div>
+                          </div>
+                          <div class="cart-item__right">
+                            <div class="cart-item__price">
+                              <div class="cart-item__price-new">65 500 ₽</div>
+                              <div class="cart-item__price-old">55 500 ₽</div>
+                            </div>
+                            <div class="cart-item__sale">Скидка 1849 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="cart__item">
+                      <div class="cart-item">
+                        <div class="cart-item__img"><a href="#"><img src="images/cart-item__img.png" alt=""></a></div>
+                        <div class="cart-item__body">
+                          <div class="cart-item__left"><a class="cart-item__title" href="#">
+                              <h2 class="h3">Наручные часы Starry Flower Diamond</h2></a>
+                            <div class="cart-item__edit"><a class="cart-item__star" href="#"><img src="images/icon--star-orange.png" alt=""></a><a class="cart-item__del" href="#"><img src="images/icon--del.png" alt=""></a>
+                                  <div class="quantity">
+                                    <div class="quantity__body">
+                                      <div class="quantity-button quantity-down"><span>-</span></div>
+                                      <input type="number" min="1" max="1000" step="1" value="1">
+                                      <div class="quantity-button quantity-up"><span>+</span></div>
+                                    </div>
+                                    <div class="quantity__footer">2750Р шт.</div>
+                                  </div>
+                            </div>
+                          </div>
+                          <div class="cart-item__right">
+                            <div class="cart-item__price">
+                              <div class="cart-item__price-new">65 500 ₽</div>
+                              <div class="cart-item__price-old">55 500 ₽</div>
+                            </div>
+                            <div class="cart-item__sale">Скидка 1849 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+              <div class="cart__code">
+                <form class="form-promocode" action="/" methode="post">
+                  <h3 class="h3">Есть промокод на скидку?</h3>
+                  <div class="form-promocode__body">
+                    <input type="text" name="promocode" placeholder="Введите промокод">
+                    <button type="submit">Применить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="cart__sidebar">
+              <div class="total">
+                <div class="total__body">
+                  <h2 class="h2">Итого</h2>
+                  <div class="total__sum">65 500 ₽</div>
+                  <div class="total__sale">Cкидка: <span>1 849 ₽</span></div>
+                  <div class="total__bottom">
+                    <div class="total__topay">Сумма к оплате <span>65 500 ₽</span></div>
+                    <div class="total__desc">Доступыне способы и время доставки можно выбрать при оформлении заказа.</div>
+                  </div>
+                </div><a class="total__btn" href="#">Оформить заказ</a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog">
+            <div class="catalog__header">
+              <h2 class="h2">Рекомендуем добавить к покупке</h2>
+            </div>
+            <div class="catalog__list">
+              <div class="catalog__item">
+                    <div class="product">
+                      <div class="product__info">
+                        <div class="product__label">Популярные</div>
+                      </div><a class="product__img" href="product.html"><img src="images/product__img.jpg" alt="Наручные часы StarryFlower &lt;br&gt;Diamond"></a><a class="product__title" href="product.html">Наручные часы StarryFlower <br>Diamond</a>
+                      <ul class="product__parametrs">
+                        <li>Цвет: <span>Золотой</span></li>
+                      </ul>
+                      <div class="product__old-price"><span>Обычная цена:</span><b>75 500 ₽</b></div>
+                      <div class="product__price"><span>Цена сейчас:</span><b>65 500 ₽</b></div>
+                      <form class="product__bottom buy-form">
+                        <div class="buy-modal"><a href="#">Купить и продолжить</a>
+                          <input type="submit" value="Купить и перейти в корзину">
+                        </div>
+                        <div><a class="product__buy buy-btn" href="product.html"><img src="images/icon--cart.png" alt="buy"><span>купить</span></a></div>
+                        <div><a class="product__one-click" href="#modal_one_click" rel="modal:open" role="button">Заказать <br>в 1 клик</a></div>
+                      </form>
+                    </div>
+              </div>
+              <div class="catalog__item">
+                    <div class="product">
+                      <div class="product__info">
+                      </div><a class="product__img" href="product.html"><img src="images/product__img.jpg" alt="Наручные часы StarryFlower &lt;br&gt;Diamond"></a><a class="product__title" href="product.html">Наручные часы StarryFlower <br>Diamond</a>
+                      <ul class="product__parametrs">
+                        <li>Цвет: <span>Золотой</span></li>
+                      </ul>
+                      <div class="product__old-price"><span>Обычная цена:</span><b>75 500 ₽</b></div>
+                      <div class="product__price"><span>Цена сейчас:</span><b>65 500 ₽</b></div>
+                      <form class="product__bottom buy-form">
+                        <div class="buy-modal"><a href="#">Купить и продолжить</a>
+                          <input type="submit" value="Купить и перейти в корзину">
+                        </div>
+                        <div><a class="product__buy buy-btn" href="product.html"><img src="images/icon--cart.png" alt="buy"><span>купить</span></a></div>
+                        <div><a class="product__one-click" href="#modal_one_click" rel="modal:open" role="button">Заказать <br>в 1 клик</a></div>
+                      </form>
+                    </div>
+              </div>
+              <div class="catalog__item">
+                    <div class="product">
+                      <div class="product__info">
+                        <div class="product__label product__label--green">Хит</div><a class="product__wishlist" href="#"></a>
+                      </div><a class="product__img" href="product.html"><img src="images/product__img.jpg" alt="Наручные часы StarryFlower &lt;br&gt;Diamond"></a><a class="product__title" href="product.html">Наручные часы StarryFlower <br>Diamond</a>
+                      <ul class="product__parametrs">
+                        <li>Цвет: <span>Золотой</span></li>
+                      </ul>
+                      <div class="product__old-price"><span>Обычная цена:</span><b>75 500 ₽</b></div>
+                      <div class="product__price"><span>Цена сейчас:</span><b>65 500 ₽</b></div>
+                      <form class="product__bottom buy-form">
+                        <div class="buy-modal"><a href="#">Купить и продолжить</a>
+                          <input type="submit" value="Купить и перейти в корзину">
+                        </div>
+                        <div><a class="product__buy buy-btn" href="product.html"><img src="images/icon--cart.png" alt="buy"><span>купить</span></a></div>
+                        <div><a class="product__one-click" href="#modal_one_click" rel="modal:open" role="button">Заказать <br>в 1 клик</a></div>
+                      </form>
+                    </div>
+              </div>
+              <div class="catalog__item">
+                    <div class="product">
+                      <div class="product__info">
+                      </div><a class="product__img" href="product.html"><img src="images/product__img.jpg" alt="Наручные часы StarryFlower &lt;br&gt;Diamond"></a><a class="product__title" href="product.html">Наручные часы StarryFlower <br>Diamond</a>
+                      <ul class="product__parametrs">
+                        <li>Цвет: <span>Золотой</span></li>
+                      </ul>
+                      <div class="product__old-price"><span>Обычная цена:</span><b>75 500 ₽</b></div>
+                      <div class="product__price"><span>Цена сейчас:</span><b>65 500 ₽</b></div>
+                      <form class="product__bottom buy-form">
+                        <div class="buy-modal"><a href="#">Купить и продолжить</a>
+                          <input type="submit" value="Купить и перейти в корзину">
+                        </div>
+                        <div><a class="product__buy buy-btn" href="product.html"><img src="images/icon--cart.png" alt="buy"><span>купить</span></a></div>
+                        <div><a class="product__one-click" href="#modal_one_click" rel="modal:open" role="button">Заказать <br>в 1 клик</a></div>
+                      </form>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container container--sm-no-gutters">
+          <div class="get-consultation">
+            <div class="get-consultation__left">
+              <div class="get-consultation__container">
+                <h3 class="get-consultation__title">Не можете определится <br>с&nbsp;выбором часов?</h3>
+                <p class="get-consultation__desc">Получите консультацию эксперта по часам <br>Позвоните или оставьте телефон <br>Свяжемся в течении 15 минут</p>
+              </div>
+            </div>
+            <div class="get-consultation__right">
+              <div class="get-consultation__container">
+                <div class="get-consultation__user"><img src="images/get-consultation__user.png" alt=""><a href="tel:88005556033">8 (800) <b>555-60-33</b></a></div>
+                <form class="get-consultation__form" action="/" method="post">
+                  <input type="text" name="get_consultation_phone" placeholder="Введите телефон">
+                  <button type="submit">Получить консультацию</button>
+                </form>
+                <div class="get-consultation__disclaimer">Регистрируясь на сайте , Вы понимаете условия <br>публичной оферты и политики <br>конфиденциальности</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </page-container>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__in">
+            <div class="footer__col footer__col--1"><a class="footer__logo" href="/"><img src="images/footer__logo.png" alt="storry"></a>
+              <p>&copy; 2020</p>
+              <p>Продажа большого ассортимента разнообразных товаров – основная специализация нашего интернет-магазина. Мы доставим ваш заказ бесплатно в любой уголок мира, осуществим подробную консультацию по товарам и поможем с выбором.</p>
+            </div>
+            <div class="footer__col footer__col--2">
+              <div class="footer__menu">
+                <div>
+                  <ul>
+                    <li><a class="footer__menu-link" href="#">Доставка и оплата</a></li>
+                    <li><a class="footer__menu-link" href="#">Как заказать</a></li>
+                    <li><a class="footer__menu-link" href="#">Гарантии и возврат</a></li>
+                    <li><a class="footer__menu-link" href="#">О магазине</a></li>
+                    <li><a class="footer__menu-link" href="#">Контакты</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li><a class="footer__menu-link" href="#">Для партнеров</a></li>
+                    <li><a class="footer__menu-link" href="#">Оптовые продажи</a></li>
+                  </ul>
+                  <div class="footer__menu-contacts"><a class="footer__email" href="mailto:zakaz@mail.ru">zakaz@mail.ru</a><a class="footer__tel" href="tel:88005556033">8 800 555 60 33</a></div>
+                </div>
+              </div>
+              <div class="footer__botom-mob">
+                <p>&copy; Название компании 2008-2018 г</p><a href="#">Политика конфиденциальности</a><a href="#">Пользовательское соглашение</a>
+              </div>
+            </div>
+            <div class="footer__col footer__col--3"><a class="footer__tel" href="tel:88005556033"> <img class="footer__icon" src="images/icon--phone-white.png" alt="">8 (800) 555-60-33</a><a class="footer__email" href="mailto:zakaz@mail.ru"><img class="footer__icon" src="images/icon--email-white.png" alt="">zakaz@mail.ru</a>
+              <ul class="soc-icons">
+                <li><a href="#"><img src="images/soc-icons__ok.png" alt=""></a></li>
+                <li><a href="#"><img src="images/soc-icons__vk.png" alt=""></a></li>
+                <li><a href="#"><img src="images/soc-icons__tw.png" alt=""></a></li>
+                <li><a href="#"><img src="images/soc-icons__fb.png" alt=""></a></li>
+              </ul><a class="footer__link" href="#">Политика конфиденциальности и оферта</a><a class="footer__link" href="#">Пользовательское соглашение</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script src="js/jquery.modal.min.js"></script>
+    <script>$(document).ready(function () {	svg4everybody({});});</script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

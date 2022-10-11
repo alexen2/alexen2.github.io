@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Корзина</title>
+      <link href="css/jquery.modal.min.css" rel="stylesheet">
+      <link href="css/slick.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet"><!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__menu-mobile">
+            <div class="menu-mobile">
+              <div class="menu-mobile__body">
+                <div class="container">
+                  <div class="menu-mobile__top">
+                        <button class="hamburger hamburger--spin is-active" type="button" id="hamburger_open"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+                  </div>
+                  <nav>
+                    <ul>
+                      <li><a href="#">каталог</a></li>
+                      <li><a href="#">Как заказать</a></li>
+                      <li><a href="#">Оплата и доставка</a></li>
+                      <li><a href="#">Отзывы</a></li>
+                      <li><a href="#">Вопрос-ответ</a></li>
+                      <li><a href="#">О магазине</a></li>
+                      <li><a href="#">Контакты</a></li>
+                    </ul>
+                  </nav>
+                </div><a class="menu-mobile__cart" href="">
+                  <div class="panel panel--mobile">
+                    <div class="panel__item panel__item--yellow panel__cart"><img src="images/icon--cart.png" alt="icon"><span>5</span></div>
+                    <div class="panel__summ">Сумма:
+                      <div>1500 Р</div>
+                    </div>
+                  </div></a>
+                <div class="container center">
+                  <div><a class="menu-mobile__phone" href="tel:88005556033"> <img src="images/icon--phone-white2.png" alt=""><span>8 (800) 555-60-33</span></a></div><a class="menu-mobile__mail" href="mailto:zakaz@mail.ru">zakaz@mail.ru</a>
+                  <p class="menu-mobile__desc">Прием заказов круглосуточно<br>Интернет магазин по продаже часов Starry</p>
+                  <div class="menu-mobile__logo"><a class="logo" href="/"><img src="images/logo.svg" alt="StarryShop"></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__top">
+            <div class="header__hamburger">
+                            <button class="hamburger hamburger--spin" type="button" id="hamburger"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+            </div><a class="logo" href="/"><img src="images/logo.svg" alt="StarryShop"></a>
+            <div class="header__site-name">Интернет магазин по продаже часов Starry</div>
+            <div class="header__contacts"><a class="header__link header__mail" href="mailto:info@info.ru"><img src="images/icon--email-small.png" alt="icon email"><span>info@info.ru</span></a><a class="header__link header__tel" href="tel:88005556033"><img src="images/icon--phone.png" alt="icon phone"><span>8 (800) <b>555-60-33</b></span></a></div>
+            <div class="header__panel">
+              <div class="panel"><a class="panel__item" href="#"><img src="images/icon--star.png" alt="icon"></a>
+                <div class="panel__item panel__item--brown panel__user"><img src="images/icon--man.png" alt="icon">
+                  <div class="userbar">
+                    <div class="userbar__body"><a class="userbar__in" href="#">Войти</a><a class="userbar__reg" href="#">Регистрация</a></div>
+                  </div>
+                </div><a class="panel__item panel__item--yellow panel__cart" href="#"><img src="images/icon--cart.png" alt="icon"><span>5</span></a>
+                <div class="panel__summ">Сумма:
+                  <div>1500<img src="images/icon--rubl.png" alt="icon"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__bottom">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item"><a href="about.html">Каталог</a></li>
+                <li class="menu__item"><a href="price.html">Как заказать</a></li>
+                <li class="menu__item menu__item--active"><a href="price.html">Оплата и доставка</a></li>
+                <li class="menu__item"><a href="price.html">Отзывы</a></li>
+                <li class="menu__item"><a href="price.html">Вопрос-ответ</a></li>
+                <li class="menu__item"><a href="price.html">О магазине</a></li>
+                <li class="menu__item"><a href="price.html">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <page-container>
+        <div class="container">
+              <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                  <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Главная</a>
+                  </li>
+                  <li class="breadcrumbs__item"><span>Наручные часы Starry Flower Diamond</span>
+                  </li>
+                </ul>
+              </div>
+          <div class="product-page">
+            <div class="product-page__title">
+              <h1 class="h2">Наручные часы Starry Flower Diamond</h1>
+              <p class="product-page__vendor-code">Артикул: 135591137</p>
+            </div>
+            <div class="product-page__body">
+              <div class="product-page__slider">
+                <div class="product-page__slider-item"><img src="images/product-page__img--red.jpg" alt=""></div>
+                <div class="product-page__slider-item"><img src="images/product-page__img--orange.jpg" alt=""></div>
+                <div class="product-page__slider-item"><img src="images/product-page__img--blue.jpg" alt=""></div>
+                <div class="product-page__slider-item"><img src="images/product-page__img--green.jpg" alt=""></div>
+              </div>
+              <div class="product-page__info">
+                <div class="product-page__prod-info">
+                  <div class="product-page__price-old">Обычная цена: <b>75 500 ₽</b></div>
+                  <div class="product-page__price">Цена сейчас: <b>65 500 ₽</b></div>
+                  <div class="product-page__colors">
+                    <h3 class="h3">Выберите цвет: </h3><a class="product-page__color-active red" href="#" data-product-color="0">&nbsp;</a><a class="orange" href="#" data-product-color="1">&nbsp;</a><a class="blue" href="#" data-product-color="2">&nbsp;</a><a class="green" href="#" data-product-color="3">&nbsp;</a>
+                  </div>
+                  <div class="product-page__quantity">
+                        <div class="quantity">
+                          <div class="quantity__body">
+                            <div class="quantity-button quantity-down"><span>-</span></div>
+                            <input type="number" min="1" max="1000" step="1" value="1">
+                            <div class="quantity-button quantity-up"><span>+</span></div>
+                          </div>
+                        </div>
+                    <div>
+                      <h3 class="h3">Наличие:</h3>
+                      <p>в наличии</p>
+                    </div>
+                  </div>
+                  <form class="product-page__actions buy-form" action="cart.html" methos="post">
+                    <div class="product-page__choice-buy buy-modal"><a href="#">Купить и продолжить</a>
+                      <input type="submit" value="Купить и перейти в корзину">
+                    </div><a class="product-page__buy buy-btn" href="#"><img src="images/icon--cart.png" alt=""><span>купить</span></a><a class="product-page__one-click" href="#modal_one_click" rel="modal:open" role="button">Заказать  <br>в 1 клик</a>
+                  </form>
+                </div>
+                <div class="product-page__shop-info">
+                  <div class="product-page__delivery">
+                    <h3 class="h3">Доставка:</h3>
+                    <p>По Москве: 350 р. на следующий день					</p>
+                    <p>По России: 250-350 руб., 3-7 дней</p>
+                    <div>При заказе от 5000 руб. доставка бесплатная. Точную стоимость доставки уточняйте у менеджера</div>
+                  </div>
+                  <ul class="product-page__feature">
+                    <li>
+                      <div><img src="images/product-page__feature1.png" alt=""></div><span>Оплата после доставки</span>
+                    </li>
+                    <li>
+                      <div><img src="images/product-page__feature2.png" alt=""></div><span>При покупке от 2х штук скидка</span>
+                    </li>
+                    <li>
+                      <div><img src="images/product-page__feature3.png" alt=""></div><span>Гарантия 1 год</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="get-coupon">
+            <div class="get-coupon__header">
+              <h2 class="h2 h2--big">Получите индивидуальный <span>купон на скидку</span></h2>
+              <p class="st center">сгенерированный специально для вас</p>
+            </div>
+            <div class="get-coupon__body">
+              <div class="get-coupon__body-in">
+                <div class="get-coupon__img"><img src="images/get-coupon__img.png" alt="купон на скидку"></div>
+                <div class="get-coupon__info">
+                  <p>Мы сгенирировали личный купон дающий право на скидку в 30% на покупку любых часов в течении 6 дней</p>
+                  <p class="get-coupon__sub-title">Выберите куда вам его отправить?</p>
+                  <ul class="get-coupon__soc">
+                    <li><img src="images/icon--whatsapp.png" alt="whatsapp"><a href="#">whatsapp</a></li>
+                    <li><img src="images/icon--viber.png" alt="viber"><a href="#">viber</a></li>
+                    <li><img src="images/icon--vk.png" alt="вконтакте"><a href="#">вконтакте</a></li>
+                    <li><img src="images/icon--email.png" alt="email"><a href="#">email</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="product-page-features">
+            <li>
+                  <div class="product-feature2"><img src="images/product-feature2__icon1.png" alt="">
+                    <h3 class="product-feature2__title">Механизм</h3>
+                    <p class="product-feature2__text">Японский <br>Кварцевый <br>Не требует подзаводасов</p>
+                  </div>
+            </li>
+            <li>
+                  <div class="product-feature2"><img src="images/product-feature2__icon2.png" alt="">
+                    <h3 class="product-feature2__title">Стекло</h3>
+                    <p class="product-feature2__text">Ударопрочное <br>Минеральное <br>сверхгладкое</p>
+                  </div>
+            </li>
+            <li>
+                  <div class="product-feature2"><img src="images/product-feature2__icon3.png" alt="">
+                    <h3 class="product-feature2__title">Цвета</h3>
+                    <p class="product-feature2__text">Франиузский синий <br>Роскошное золото <br> Магический пурпурный <br>Благородноесеребро</p>
+                  </div>
+            </li>
+            <li>
+                  <div class="product-feature2"><img src="images/product-feature2__icon4.png" alt="">
+                    <h3 class="product-feature2__title">Ремешок</h3>
+                    <p class="product-feature2__text">Изяшное миланское <br>плетение из стальных <br>«нитей». 16x220 мм</p>
+                  </div>
+            </li>
+            <li>
+                  <div class="product-feature2"><img src="images/product-feature2__icon5.png" alt="">
+                    <h3 class="product-feature2__title">Корпус</h3>
+                    <p class="product-feature2__text">Прочный <br>авиационный сплав <br>Диаметр 34 мм</p>
+                  </div>
+            </li>
+            <li>
+                  <div class="product-feature2"><img src="images/product-feature2__icon6.png" alt="">
+                    <h3 class="product-feature2__title">Застежка</h3>
+                    <p class="product-feature2__text">Прочная магнитная <br>Фиксируется <br>за 1 секунду</p>
+                  </div>
+            </li>
+          </ul>
+          <div class="tabs tabs--2">
+            <ul class="tabs__menu">
+              <li><a class="tabs__menu-active" href="#tabs2_1">Описание</a></li>
+              <li><a href="#tabs2_2">Технические характеристики</a></li>
+              <li><a href="#tabs2_3">Доставка</a></li>
+              <li><a href="#tabs2_4">Гарантия и возврат</a></li>
+            </ul>
+            <ul class="tabs__body">
+              <li class="tabs__body-active" id="tabs2_1">
+                <p>Стильные часы Starry Sky Watch – это воплощение изысканности и элегантности. Они предназначены для модниц, стремящихся безупречно одеваться и носить стильные аксессуары. Часы данного бренда отличаются точностью и надежностью.</p>
+                <p>Уникальный высокоточный кварцевый механизм побеспокоится о том, чтобы его владелица никогда и никуда не опаздывала.</p>
+                <p>Уникальный магнитный ремешок позволяет с легкостью одевать часы, при этом не требуется регулировка размера под руку, а его надежность не даст часам слететь с руки.</p>
+                <p>Starry Sky Watch – свежее решение и необычное сочетание материалов, которые дерзко впишутся в любой наряд и выделят Вас среди окружающих.</p>
+              </li>
+              <li id="tabs2_2">
+                <p>Технические характеристики</p>
+                <p>Стильные часы Starry Sky Watch – это воплощение изысканности и элегантности. Они предназначены для модниц, стремящихся безупречно одеваться и носить стильные аксессуары. Часы данного бренда отличаются точностью и надежностью.</p>
+                <p>Уникальный высокоточный кварцевый механизм побеспокоится о том, чтобы его владелица никогда и никуда не опаздывала.</p>
+                <p>Уникальный магнитный ремешок позволяет с легкостью одевать часы, при этом не требуется регулировка размера под руку, а его надежность не даст часам слететь с руки.</p>
+                <p>Starry Sky Watch – свежее решение и необычное сочетание материалов, которые дерзко впишутся в любой наряд и выделят Вас среди окружающих.</p>
+              </li>
+              <li id="tabs2_3">
+                <p>Доставка</p>
+                <p>Стильные часы Starry Sky Watch – это воплощение изысканности и элегантности. Они предназначены для модниц, стремящихся безупречно одеваться и носить стильные аксессуары. Часы данного бренда отличаются точностью и надежностью.</p>
+                <p>Уникальный высокоточный кварцевый механизм побеспокоится о том, чтобы его владелица никогда и никуда не опаздывала.</p>
+                <p>Уникальный магнитный ремешок позволяет с легкостью одевать часы, при этом не требуется регулировка размера под руку, а его надежность не даст часам слететь с руки.</p>
+                <p>Starry Sky Watch – свежее решение и необычное сочетание материалов, которые дерзко впишутся в любой наряд и выделят Вас среди окружающих.</p>
+              </li>
+              <li id="tabs2_4">
+                <p>Гарантия и возврат</p>
+                <p>Стильные часы Starry Sky Watch – это воплощение изысканности и элегантности. Они предназначены для модниц, стремящихся безупречно одеваться и носить стильные аксессуары. Часы данного бренда отличаются точностью и надежностью.</p>
+                <p>Уникальный высокоточный кварцевый механизм побеспокоится о том, чтобы его владелица никогда и никуда не опаздывала.</p>
+                <p>Уникальный магнитный ремешок позволяет с легкостью одевать часы, при этом не требуется регулировка размера под руку, а его надежность не даст часам слететь с руки.</p>
+                <p>Starry Sky Watch – свежее решение и необычное сочетание материалов, которые дерзко впишутся в любой наряд и выделят Вас среди окружающих.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container container--sm-no-gutters">
+          <div class="get-consultation">
+            <div class="get-consultation__left">
+              <div class="get-consultation__container">
+                <h3 class="get-consultation__title">Не можете определится <br>с&nbsp;выбором часов?</h3>
+                <p class="get-consultation__desc">Получите консультацию эксперта по часам <br>Позвоните или оставьте телефон <br>Свяжемся в течении 15 минут</p>
+              </div>
+            </div>
+            <div class="get-consultation__right">
+              <div class="get-consultation__container">
+                <div class="get-consultation__user"><img src="images/get-consultation__user.png" alt=""><a href="tel:88005556033">8 (800) <b>555-60-33</b></a></div>
+                <form class="get-consultation__form" action="/" method="post">
+                  <input type="text" name="get_consultation_phone" placeholder="Введите телефон">
+                  <button type="submit">Получить консультацию</button>
+                </form>
+                <div class="get-consultation__disclaimer">Регистрируясь на сайте , Вы понимаете условия <br>публичной оферты и политики <br>конфиденциальности</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </page-container>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__in">
+            <div class="footer__col footer__col--1"><a class="footer__logo" href="/"><img src="images/footer__logo.png" alt="storry"></a>
+              <p>&copy; 2020</p>
+              <p>Продажа большого ассортимента разнообразных товаров – основная специализация нашего интернет-магазина. Мы доставим ваш заказ бесплатно в любой уголок мира, осуществим подробную консультацию по товарам и поможем с выбором.</p>
+            </div>
+            <div class="footer__col footer__col--2">
+              <div class="footer__menu">
+                <div>
+                  <ul>
+                    <li><a class="footer__menu-link" href="#">Доставка и оплата</a></li>
+                    <li><a class="footer__menu-link" href="#">Как заказать</a></li>
+                    <li><a class="footer__menu-link" href="#">Гарантии и возврат</a></li>
+                    <li><a class="footer__menu-link" href="#">О магазине</a></li>
+                    <li><a class="footer__menu-link" href="#">Контакты</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li><a class="footer__menu-link" href="#">Для партнеров</a></li>
+                    <li><a class="footer__menu-link" href="#">Оптовые продажи</a></li>
+                  </ul>
+                  <div class="footer__menu-contacts"><a class="footer__email" href="mailto:zakaz@mail.ru">zakaz@mail.ru</a><a class="footer__tel" href="tel:88005556033">8 800 555 60 33</a></div>
+                </div>
+              </div>
+              <div class="footer__botom-mob">
+                <p>&copy; Название компании 2008-2018 г</p><a href="#">Политика конфиденциальности</a><a href="#">Пользовательское соглашение</a>
+              </div>
+            </div>
+            <div class="footer__col footer__col--3"><a class="footer__tel" href="tel:88005556033"> <img class="footer__icon" src="images/icon--phone-white.png" alt="">8 (800) 555-60-33</a><a class="footer__email" href="mailto:zakaz@mail.ru"><img class="footer__icon" src="images/icon--email-white.png" alt="">zakaz@mail.ru</a>
+              <ul class="soc-icons">
+                <li><a href="#"><img src="images/soc-icons__ok.png" alt=""></a></li>
+                <li><a href="#"><img src="images/soc-icons__vk.png" alt=""></a></li>
+                <li><a href="#"><img src="images/soc-icons__tw.png" alt=""></a></li>
+                <li><a href="#"><img src="images/soc-icons__fb.png" alt=""></a></li>
+              </ul><a class="footer__link" href="#">Политика конфиденциальности и оферта</a><a class="footer__link" href="#">Пользовательское соглашение</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="modal modal--one-click" id="modal_one_click">
+      <div class="modal__header">
+        <h2 class="h2">Покупка в 1 клик</h2>
+        <p class="text">Укажите, пожалуйста, Ваше имя и номер телефона, и мы оформим заказ за Вас, уточнив все детали по предварительному звонку</p>
+      </div>
+      <form class="form-order">
+        <div class="block">
+          <div class="form-order__item">
+            <input type="text" name="order_name" placeholder="ФИО">
+          </div>
+          <div class="form-order__item">
+            <input type="text" name="order_phone" placeholder="Телефон для связи">
+          </div>
+          <div class="form-order__item">
+            <input class="total__btn" type="submit" value="Оформить заказ">
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script src="js/jquery.modal.min.js"></script>
+    <script>$(document).ready(function () {	svg4everybody({});});</script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
