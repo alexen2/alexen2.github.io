@@ -2191,6 +2191,12 @@ img[data-img]:hover {
   margin-top: 38px;
   color: var(--color-typography-secondary); }
 
+.greeting__lead > p {
+  margin-bottom: 16px; }
+
+.greeting__lead > p:last-child {
+  margin-bottom: 0; }
+
 .greeting__contacts {
   margin-top: 24px;
   color: var(--color-typography-secondary); }
